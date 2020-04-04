@@ -6,7 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
 {
-    [Tooltip("In ms^-1")][SerializeField] float Speed = 20f;
+    [Tooltip("In ms^-1")] [SerializeField] float Speed = 20f;
     [Tooltip("In m")] [SerializeField] float xRange = 4.5f;
     [Tooltip("In m")] [SerializeField] float yRange = 3f;
 
@@ -20,10 +20,15 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
-   
+
+    void OnTriggerEnter(Collider other)
+    {
+        print("Trigger, Shit");
+    }
+
     void Update()
     {
         ProcessTranslation();

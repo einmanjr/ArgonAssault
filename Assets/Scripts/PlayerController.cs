@@ -4,37 +4,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    [Tooltip("In ms^-1")] [SerializeField] float Speed = 20f;
+    [Header("General")]
+    [Tooltip("In ms^-1")] [SerializeField] float ControlSpeed = 20f;
     [Tooltip("In m")] [SerializeField] float xRange = 4.5f;
     [Tooltip("In m")] [SerializeField] float yRange = 3f;
 
+    [Header("Screen Position-Based")]
     [SerializeField] float positionPitchFactor = -5f;
-    [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float positionYawFactor = 2f;
+
+    [Header("Control Throw-Based")]
+    [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float controlRollFactor = -15f;
 
 
     float xThrow, yThrow;
+    bool ControlsEnabled = true;
 
-    void Start()
-    {
-
-    }
-
-
-    void OnTriggerEnter(Collider other)
-    {
-        print("Trigger, Shit");
-    }
 
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (ControlsEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
 
+    void OnPlayerDeath()                // called by string reference
+    {
+        ControlsEnabled = false;
+    }
+     
     private void ProcessRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
@@ -48,12 +51,12 @@ public class Player : MonoBehaviour
     }
 
     private void ProcessTranslation()
-    {
+    { 
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
 
-        float xOffset = xThrow * Speed * Time.deltaTime;
-        float yOffset = yThrow * Speed * Time.deltaTime;
+        float xOffset = xThrow * ControlSpeed * Time.deltaTime;
+        float yOffset = yThrow * ControlSpeed * Time.deltaTime;
 
 
         float rawXPos = transform.localPosition.x + xOffset;

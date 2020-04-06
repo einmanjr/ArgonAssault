@@ -230,6 +230,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 297635310}
+    - target: {fileID: 1388126036, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
+      propertyPath: hits
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_Name
       value: Ship_02 (1)
@@ -349,6 +353,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 562f8ff737cff1649ba2cbbda10ba65f, type: 3}
+--- !u!1 &504589249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746,
+    type: 3}
+  m_PrefabInstance: {fileID: 1527198510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &504589254
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504589249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &504589255
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504589249}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 2b97ad49a06f7c34a87dc46fe68510d1, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114565529543503802, guid: 2b97ad49a06f7c34a87dc46fe68510d1, type: 2}
+    value: {fileID: 504589254}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +584,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 297635310}
+    - target: {fileID: 1388126036, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
+      propertyPath: hits
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_Name
       value: Ship_02 (2)
@@ -729,6 +781,10 @@ PrefabInstance:
     - target: {fileID: 2079757147, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
       propertyPath: scorePerHit
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079757147, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
+      propertyPath: hits
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1090395654553690, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
       propertyPath: m_Name
@@ -1044,37 +1100,41 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 297635310}
+    - target: {fileID: 1388126036, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
+      propertyPath: hits
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_Name
-      value: Ship_02
+      value: Falcon (0)
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -785.9
+      value: -807.9
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -180.5
+      value: -152.5
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.4
+      value: 42.6
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.049996432
+      value: 0.5155408
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7320568
+      value: -0.52848285
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.52027607
+      value: -0.6699223
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.4369279
+      value: 0.07827968
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_RootOrder
@@ -1082,15 +1142,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -53.652004
+      value: -38.857002
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -97.44701
+      value: -96.648
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -40.06
+      value: -123.44301
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
@@ -1105,6 +1165,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 297635310}
+    - target: {fileID: 1949551303, guid: 5f0acb7fcf73f9b43beff0e0f19c45da, type: 3}
+      propertyPath: hits
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1330105141890764, guid: 5f0acb7fcf73f9b43beff0e0f19c45da, type: 3}
       propertyPath: m_Name
       value: Ship_07

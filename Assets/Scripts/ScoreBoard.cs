@@ -8,6 +8,7 @@ public class ScoreBoard : MonoBehaviour
     
     int score;
     Text scoreText;
+
     void Start()
     {
         scoreText = GetComponent<Text>();

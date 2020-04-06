@@ -12,13 +12,14 @@ GameObject:
   - component: {fileID: 5931646274020418059}
   - component: {fileID: 5931646274020418058}
   - component: {fileID: 5931646274020418057}
+  - component: {fileID: 114605613079336548}
   m_Layer: 0
-  m_Name: Explosion
+  m_Name: Enemy Death FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5931646274020418052
 Transform:
   m_ObjectHideFlags: 0
@@ -4795,3 +4796,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114605613079336548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5931646274020418056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd76d8dab1962d4aac448228c350ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

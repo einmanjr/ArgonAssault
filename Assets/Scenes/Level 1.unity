@@ -213,6 +213,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &404786092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4788943112930903001, guid: da84ecdabea1c774dad8d6d9285c934a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4788943112644231368}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &448888090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -864,6 +870,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6fbad5272546a4ca135381add72c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1226597645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4788943111281616391, guid: da84ecdabea1c774dad8d6d9285c934a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4788943112644231368}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1251286505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,6 +1555,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 4788943112037112076, guid: da84ecdabea1c774dad8d6d9285c934a,
+        type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4788943112037112076, guid: da84ecdabea1c774dad8d6d9285c934a,
+        type: 3}
+      propertyPath: lasers
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4788943112037112076, guid: da84ecdabea1c774dad8d6d9285c934a,
+        type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 404786092}
+    - target: {fileID: 4788943112037112076, guid: da84ecdabea1c774dad8d6d9285c934a,
+        type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1226597645}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da84ecdabea1c774dad8d6d9285c934a, type: 3}
 --- !u!1001 &6034621853243151238

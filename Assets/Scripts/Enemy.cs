@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [Tooltip("Easter Egg")] [SerializeField] GameObject deathFX;
     [Tooltip("Parent to all")] [SerializeField] Transform parent;
     [SerializeField] int scorePerHit = 25;
+    [SerializeField] int hits = 10;
 
     ScoreBoard scoreBoard;
 
@@ -25,9 +26,17 @@ public class Enemy : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         scoreBoard.scoreHit(scorePerHit);
-        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
-        fx.transform.parent = parent;
-        Destroy(gameObject);  
+        hits -= 1;        //TODO consider hit FX
+        if (hits <= 0)
+        {
+            KillEnemy();
+        }
     }
 
+    private void KillEnemy()
+    {
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
+        Destroy(gameObject);
+    }
 }
